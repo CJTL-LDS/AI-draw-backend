@@ -1,0 +1,17 @@
+[project]
+name = "ai-draw-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10.9"
+dependencies = [
+    "diffusers>=0.34.0",
+    "pillow>=11.3.0",
+    "torch>=2.7.1",
+    "transforms>=0.2.1",
+]
+
+[tool.uv.workspace]
+members = [
+    "11",
+]
