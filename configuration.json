@@ -1,0 +1,19 @@
+{
+  "base": {
+    "base_model_path": "./base_model",
+    "device": "cuda"
+  },
+  "lora": {
+    "lora_model_path": "./lora_model/ink.safetensors"
+  },
+  "train": {
+    "prompt": "",
+    "negative_prompt": "",
+    "strength": 0.1,
+    "guidance_scale": 7.5,
+    "num_inference_steps": 7.5,
+    "num_images_per_prompt": 2,
+    "height": 512,
+    "width": 512
+  }
+}

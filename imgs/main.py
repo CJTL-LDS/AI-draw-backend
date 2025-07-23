@@ -6,11 +6,11 @@ from PIL import Image
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # 加载图生图pipeline
-model_path = "./assets/ink.safetensors"
+model_path = "../lora_model/ink.safetensors"
 pipe = StableDiffusionImg2ImgPipeline.from_single_file(model_path, torch_dtype=torch.float32).to(device)
 
 # 读取初始图片
-init_image = Image.open("1.png").convert("RGB")
+init_image = Image.open("test01.png").convert("RGB")
 
 # 推理
 prompt = "Identical with the origin picture"
